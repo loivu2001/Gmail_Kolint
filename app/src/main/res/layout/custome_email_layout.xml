@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:backgroundTint="#ffffff"
+        android:padding="3dp">
+        <TextView
+            android:id="@+id/circle_name"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="E"
+            android:textSize="30dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/screenshot_2023_10_30_182339"></ImageView>
+
+                <TextView
+                    android:id="@+id/email_sender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center|left"
+                    android:text="Edurila.com"
+                    android:textSize="20dp"></TextView>
+
+                <TextView
+                    android:id="@+id/email_time"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:text="12:34 PM"
+                    android:textSize="20dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/email_content"
+                    android:layout_width="276dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="top"
+                    android:maxLines="2"
+                    android:text="1. freeCodeCamp just published this comprehensive Front End Developer Roadmap. If you're new to coding, Front End Development is a great skillset to build up first. freeCodeCamp teacher Beau Carnes will explain the core Front End concepts and tools you should prioritize learning first. You'll learn HTML, CSS, JavaScript, React, Next.js, VS Code, and even some AI Prompt Engineering. This roadmap is a big time commitment, but you can hop on and hop off as you see fit. Either way, you'll learn a ton of relevant skills and theory. (85 hour coding roadmap of YouTube courses): https://www.freecodecamp.org/news/front-end-developer-roadmap"
+                    android:textSize="18dp">
+
+                </TextView>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="1"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
